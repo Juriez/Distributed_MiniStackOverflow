@@ -1,0 +1,68 @@
+/* Centering the root container with max width and padding */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9fafb; /* Slight background for better contrast */
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Logo with hover effects */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms, transform 300ms ease; /* Added smooth transition for scaling */
+  will-change: filter, transform;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.7)); /* Slightly lighter color */
+  transform: scale(1.05); /* Added scaling effect on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 218, 255, 0.7)); /* Light blue for React */
+  transform: scale(1.05);
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card style for layout */
+.card {
+  padding: 2em;
+  border-radius: 8px; /* Smooth corners */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: box-shadow 300ms ease; /* Smooth transition on hover */
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Read the docs style */
+.read-the-docs {
+  color: #888;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.read-the-docs:hover {
+  color: #333;
+  text-decoration: none;
+}
