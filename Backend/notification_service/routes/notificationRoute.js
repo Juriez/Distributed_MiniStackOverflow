@@ -3,20 +3,8 @@ const router=express.Router()
 const Notification=require('../models/Notification')
 const authmiddleware=require('../middleware/authMiddleware')
 
-// router.get('/notification',authmiddleware, async (req,res)=>{
-//   const notification=  await Notification.find();
-// if(notification){
-//   res.status(200).json(notification)
-//   console.log(notification)
-// }
-//   else{
-//     res.status(404).json({message:'No notification found'})
-//     console.log(error)
-//   }
 
-// })
-// POST /api/notifications
-router.post('/noti', async (req, res) => {
+router.post('/notify', async (req, res) => {
   try {
     const { email, postId, message, totalRecipients } = req.body;
 

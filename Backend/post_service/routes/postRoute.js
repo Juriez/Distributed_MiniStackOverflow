@@ -37,7 +37,7 @@ router.post('/post',authMiddleware,upload.single('codeSnippet'),async(req,res)=>
 
 try {
   
-  const notificationServiceUrl = `http://notification-service:5003/noti`;
+  const notificationServiceUrl = `http://notification-service:5003/notify`;
 
 
   // Perform the POST request to create a notification

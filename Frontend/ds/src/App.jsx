@@ -30,7 +30,7 @@ function App() {
           <div className="container mx-auto">
             {/* Navbar */}
             <header className="flex justify-between items-center bg-purple-300 p-4 rounded-md shadow-md">
-              <h1 className="text-2xl font-bold">StackOverflow</h1>
+              <h1 className="text-2xl font-bold">MiniStackOverflow</h1>
               <nav className="flex gap-4 flex-wrap">
                 <Link className="font-bold text-black bg-white rounded-md border-black border-2 px-3 py-1 hover:bg-gray-200" to="/">Home</Link>
                 <Link className="font-bold text-white bg-black rounded-md px-3 py-1 hover:bg-gray-800" to="/notifications">Notifications</Link>

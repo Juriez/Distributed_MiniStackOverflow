@@ -73,10 +73,10 @@ function PostList({ token }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-      <div className="w-full max-w-xl bg-white shadow-lg rounded-lg p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 p-6">
+      <div className="w-full max-w-xl bg-white/80 backdrop-blur-lg shadow-xl rounded-lg p-6">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-gray-700">Create a Post</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Create a Post</h2>
           <button
             onClick={showingUserPosts ? fetchPosts : fetchUserPosts}
             className="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-lg transition"
@@ -121,8 +121,8 @@ function PostList({ token }) {
         </button>
       </div>
 
-      <div className="w-full max-w-xl mt-6">
-        <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
+      <div className="w-full max-w-xl mt-6 bg-white/80 backdrop-blur-lg shadow-lg rounded-lg p-6">
+        <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">
           {showingUserPosts ? "My Posts" : "Posts by Others"}
         </h2>
         {posts.length ? (

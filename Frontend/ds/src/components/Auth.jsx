@@ -37,9 +37,9 @@ function Auth({ setToken }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 via-teal-400 to-purple-500">
       <div className="w-full max-w-sm p-6 bg-white shadow-lg rounded-xl">
-        <h2 className="text-center text-2xl font-bold mb-6 text-gray-700">Welcome</h2>
+        <h2 className="text-center text-2xl font-bold mb-6 text-gray-700">Welcome to our MiniStackOverFlow</h2>
 
         <input
           type="email"
