@@ -56,7 +56,7 @@ The entire project has been **Dockerized** to ensure seamless deployment and sca
 ### Steps to Run Locally
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Juriez/Distributed_MiniStackOverflow/MiniStackOverflow.git
+   git clone https://github.com/Juriez/Distributed_MiniStackOverflow.git
    cd MiniStackOverflow
    ```
 
